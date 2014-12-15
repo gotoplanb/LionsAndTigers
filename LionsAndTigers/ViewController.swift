@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var myImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         myTigers.append(myTiger)
         
         println("My tiger's name is: \(myTiger.name), it's age is \(myTiger.age), it's breed is \(myTiger.breed) and it's image is \(myTiger.image)")
-
+        
         myImageView.image = myTiger.image
         nameLabel.text = myTiger.name
         breedLabel.text = myTiger.breed
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
         fourthTiger.breed = "Siberian Tiger"
         fourthTiger.age = 5
         fourthTiger.image = UIImage(named: "SiberianTiger.jpg")
-    
+        
         myTigers += [secondTiger, thirdTiger, fourthTiger]
         
         println("\(myTigers)")
@@ -64,13 +64,26 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBAction func nextBarButtonItemPressed(sender: UIBarButtonItem) {
         
-        println(myTigers)
+        let randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
+        let tiger = myTigers[randomIndex]
+        
+        
+        UIView.transitionWithView(self.view, duration: 2, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: {
+            
+            self.myImageView.image = tiger.image
+            self.nameLabel.text = tiger.name
+            self.ageLabel.text = "\(tiger.age)"
+            self.breedLabel.text = tiger.breed
+            
+            }, completion: {
+                (finished: Bool) -> () in
+        })
         
     }
     
-
+    
 }
 
