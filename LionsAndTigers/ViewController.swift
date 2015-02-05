@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     
     var myTigers:[Tiger] = []
+    var lions:[Lion] = []
     
     var currentIndex = 0
     
@@ -87,6 +88,8 @@ class ViewController: UIViewController {
         lioness.image = UIImage(named: "Lioness.jpeg")
         lioness.name = "Sarabi"
         lioness.subspecies = "Barbary"
+        
+        self.lions += [lion, lioness]
         
     }
     
