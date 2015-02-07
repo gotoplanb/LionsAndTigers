@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		632AB0F91A85AF7B00F437D7 /* LionCub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632AB0F81A85AF7B00F437D7 /* LionCub.swift */; };
 		635FC9731A3554F9003F5060 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635FC9721A3554F9003F5060 /* AppDelegate.swift */; };
 		635FC9751A3554F9003F5060 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635FC9741A3554F9003F5060 /* ViewController.swift */; };
 		635FC9781A3554F9003F5060 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635FC9761A3554F9003F5060 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		632AB0F81A85AF7B00F437D7 /* LionCub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LionCub.swift; sourceTree = "<group>"; };
 		635FC96D1A3554F9003F5060 /* LionsAndTigers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LionsAndTigers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		635FC9711A3554F9003F5060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		635FC9721A3554F9003F5060 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				635FC9721A3554F9003F5060 /* AppDelegate.swift */,
 				635FC9741A3554F9003F5060 /* ViewController.swift */,
+				632AB0F81A85AF7B00F437D7 /* LionCub.swift */,
 				635FC9761A3554F9003F5060 /* Main.storyboard */,
 				63B60C571A8337290087F36B /* Lion.swift */,
 				635FC9921A355789003F5060 /* Tiger.swift */,
@@ -261,6 +264,7 @@
 				635FC9751A3554F9003F5060 /* ViewController.swift in Sources */,
 				635FC9931A355789003F5060 /* Tiger.swift in Sources */,
 				635FC9731A3554F9003F5060 /* AppDelegate.swift in Sources */,
+				632AB0F91A85AF7B00F437D7 /* LionCub.swift in Sources */,
 				63B60C581A8337290087F36B /* Lion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
